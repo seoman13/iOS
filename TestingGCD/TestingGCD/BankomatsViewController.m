@@ -8,6 +8,7 @@
 
 #import "BankomatsViewController.h"
 #import <MapKit/MapKit.h>
+#import "SegmentedControlPanel.h"
 
 @interface BankomatsViewController ()
 
@@ -19,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     MKMapView *map = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    SegmentedControlPanel *panel = [SegmentedControlPanel new];
+    [self.view addSubview:panel];
     [self.view addSubview:map];
 }
 

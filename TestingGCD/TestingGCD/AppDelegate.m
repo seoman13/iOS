@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "BankomatsViewController.h"
 #import "HomeViewController.h"
+#import "SegmentedControlPanel.h"
 
 @interface AppDelegate ()
 
@@ -23,17 +24,14 @@
 //    ViewController *vc = [ViewController new];
 //    HomeViewController *vc = [HomeViewController new];
     UITabBarController *tab = [UITabBarController new];
-    UISegmentedControl *seg = [[UISegmentedControl alloc] init];
+
     
     BankomatsViewController *vc = [BankomatsViewController new];
     NSArray *viewControllers = @[vc];
     
-    tab.viewControllers = viewControllers;
-    tab.tabBar.
-    
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    _window.rootViewController = tab;
+    _window.rootViewController = vc;
     
     [_window makeKeyAndVisible];
     

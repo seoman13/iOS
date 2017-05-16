@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040D97691ECB837F00318338 /* SegmentedControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D97681ECB837F00318338 /* SegmentedControlPanel.m */; };
 		0443D22C1ECB63AE007D9769 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443D22B1ECB63AE007D9769 /* main.m */; };
 		0443D22F1ECB63AE007D9769 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443D22E1ECB63AE007D9769 /* AppDelegate.m */; };
 		0443D2321ECB63AE007D9769 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443D2311ECB63AE007D9769 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040D97671ECB837F00318338 /* SegmentedControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlPanel.h; sourceTree = "<group>"; };
+		040D97681ECB837F00318338 /* SegmentedControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlPanel.m; sourceTree = "<group>"; };
 		0443D2271ECB63AE007D9769 /* TestingGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingGCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0443D22B1ECB63AE007D9769 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0443D22D1ECB63AE007D9769 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040D97661ECB832C00318338 /* CustomSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				040D97671ECB837F00318338 /* SegmentedControlPanel.h */,
+				040D97681ECB837F00318338 /* SegmentedControlPanel.m */,
+			);
+			name = CustomSegmentedControl;
+			sourceTree = "<group>";
+		};
 		0443D21E1ECB63AE007D9769 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +76,7 @@
 		0443D2291ECB63AE007D9769 /* TestingGCD */ = {
 			isa = PBXGroup;
 			children = (
+				040D97661ECB832C00318338 /* CustomSegmentedControl */,
 				0443D2451ECB7613007D9769 /* NavigationViewController */,
 				0443D2411ECB72F3007D9769 /* MapView */,
 				0443D22D1ECB63AE007D9769 /* AppDelegate.h */,
@@ -179,6 +192,7 @@
 				0443D2321ECB63AE007D9769 /* ViewController.m in Sources */,
 				0443D22F1ECB63AE007D9769 /* AppDelegate.m in Sources */,
 				0443D22C1ECB63AE007D9769 /* main.m in Sources */,
+				040D97691ECB837F00318338 /* SegmentedControlPanel.m in Sources */,
 				0443D2481ECB7656007D9769 /* HomeViewController.m in Sources */,
 				0443D2441ECB7324007D9769 /* BankomatsViewController.m in Sources */,
 			);
@@ -337,6 +351,7 @@
 				0443D2401ECB63AE007D9769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

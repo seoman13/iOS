@@ -45,7 +45,7 @@
 //        [self someMethod];                             // tak nelza delat
 //    });
     
-    dispatch_apply(<#size_t iterations#>, <#dispatch_queue_t  _Nonnull queue#>, <#^(size_t)block#>) // 
+   // dispatch_apply(<#size_t iterations#>, <#dispatch_queue_t  _Nonnull queue#>, <#^(size_t)block#>) //
     
 
     
@@ -58,13 +58,13 @@
     
     
     
-    dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC))
+    //dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC))
     
-    dispatch_semaphore_t sem = dispatch_semaphore_signal(<#dispatch_semaphore_t  _Nonnull dsema#>)
+    //dispatch_semaphore_t sem = dispatch_semaphore_signal(<#dispatch_semaphore_t  _Nonnull dsema#>)
     
     
     
-    dispatch_queue_t queue = dispatch_queue_create("", 0);
+    //dispatch_queue_t queue = dispatch_queue_create("", 0);
     
     
     
