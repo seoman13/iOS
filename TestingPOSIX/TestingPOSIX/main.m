@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "pthread.h"
 
+@import Darwin.os.lock;
+
 #define SUCCESS 0
 
 //  parallel array
@@ -37,6 +39,8 @@ int main(int argc, const char * argv[]) {
         pthread_cond_init(&condVar, NULL);
         
         NSUInteger addition = collection.count%maxThreadCount;
+        NSTimeInterval startTime;
+        NSTimeInterval endTime;
         
         //Fork
         for (NSUInteger i = 0; i<maxThreadCount; ++i) {
@@ -85,25 +89,28 @@ int main(int argc, const char * argv[]) {
         pthread_mutex_destroy(&condVarMutex);
         pthread_cond_destroy(&condVar);
         
-        
+//        NSLock *lock = [NSLock new];
         // GCD Block of code
         __block NSUInteger gcdResult = 0;
         __block NSUInteger iterations = 0;
 //        dispatch_semaphore_t sincSem = dispatch_semaphore_create(0);
-        
+        startTime = [NSDate new].timeIntervalSince1970;
 //        dispatch_semaphore_t sem = dispatch_semaphore_create([collection count]);
         dispatch_apply([collection count], dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t index) {
+//            os_unfair_lock_lock(&lock);
             gcdResult = gcdResult + collection[index].integerValue;
             ++iterations;
+//            os_unfair_lock_unlock(&lock);
 //            dispatch_semaphore_signal(sincSem);
 //            dispatch_semaphore_signal(sem);
         });
         
 //        dispatch_semaphore_wait(sincSem, DISPATCH_TIME_FOREVER);
-        
         NSLog(@"GCD result %lu", gcdResult);
         NSLog(@"Right Count %lu", [collection count]);
         NSLog(@"Iterations %lu", iterations);
+        endTime = [NSDate new].timeIntervalSince1970;
+        NSLog(@"Time elapsed: %f", endTime - startTime);
     }
     
     return 0;
@@ -124,7 +131,7 @@ void* threadEnumerateArray(void *args) {
     
     for (NSNumber *number in array) {
         sum = sum + number.integerValue;
-        NSLog(@"Thread: %lu number: %@", arguments->threadID, number);
+        //NSLog(@"Thread: %lu number: %@", arguments->threadID, number);
     }
     
     pthread_mutex_lock(&condVarMutex);
