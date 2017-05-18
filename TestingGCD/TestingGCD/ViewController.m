@@ -38,7 +38,7 @@
     
     dispatch_queue_t queue = dispatch_queue_create("ru.sergik.demo-queue", 0);//DISPATCH_QUEUE_CONCURRENT,
     
-    
+    dispatch_semaphore
 //    dispatch_queue_attr_t
     
 //    dispatch_sync(dispatch_get_main_queue(), ^{

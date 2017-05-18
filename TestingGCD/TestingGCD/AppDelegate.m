@@ -23,11 +23,11 @@
     // Override point for customization after application launch.
 //    ViewController *vc = [ViewController new];
 //    HomeViewController *vc = [HomeViewController new];
-    UITabBarController *tab = [UITabBarController new];
+//    UITabBarController *tab = [UITabBarController new];
 
     
     BankomatsViewController *vc = [BankomatsViewController new];
-    NSArray *viewControllers = @[vc];
+//    NSArray *viewControllers = @[vc];
     
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];

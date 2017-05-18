@@ -16,6 +16,7 @@
 		0443D23A1ECB63AE007D9769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443D2381ECB63AE007D9769 /* LaunchScreen.storyboard */; };
 		0443D2441ECB7324007D9769 /* BankomatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443D2431ECB7324007D9769 /* BankomatsViewController.m */; };
 		0443D2481ECB7656007D9769 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443D2471ECB7656007D9769 /* HomeViewController.m */; };
+		044A4F511ECDFB8300697E26 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044A4F501ECDFB8300697E26 /* Masonry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		0443D2431ECB7324007D9769 /* BankomatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankomatsViewController.m; sourceTree = "<group>"; };
 		0443D2461ECB7656007D9769 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		0443D2471ECB7656007D9769 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		044A4F501ECDFB8300697E26 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044A4F511ECDFB8300697E26 /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 			children = (
 				0443D2291ECB63AE007D9769 /* TestingGCD */,
 				0443D2281ECB63AE007D9769 /* Products */,
+				044A4F4F1ECDFB8300697E26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +122,14 @@
 			name = NavigationViewController;
 			sourceTree = "<group>";
 		};
+		044A4F4F1ECDFB8300697E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				044A4F501ECDFB8300697E26 /* Masonry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +140,7 @@
 				0443D2231ECB63AE007D9769 /* Sources */,
 				0443D2241ECB63AE007D9769 /* Frameworks */,
 				0443D2251ECB63AE007D9769 /* Resources */,
+				044A4F521ECDFB9100697E26 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -183,6 +196,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044A4F521ECDFB9100697E26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0443D2231ECB63AE007D9769 /* Sources */ = {
@@ -314,6 +344,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestingGCD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.intern.TestingGCD;
@@ -325,6 +359,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestingGCD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.intern.TestingGCD;

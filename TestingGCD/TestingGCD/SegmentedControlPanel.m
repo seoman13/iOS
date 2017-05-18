@@ -14,6 +14,10 @@
     [self insertSegmentWithTitle:@"Map" atIndex:0 animated:YES];
     [self insertSegmentWithTitle:@"Satellite" atIndex:1 animated:YES];
     [self insertSegmentWithTitle:@"Hybrid" atIndex:2 animated:YES];
+    self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo
+    }
+    
 }
 
 @end
