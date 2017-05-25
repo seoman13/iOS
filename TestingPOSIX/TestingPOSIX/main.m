@@ -159,10 +159,47 @@ int main(int argc, const char * argv[]) {
         NSLog(@"For-in result %lu", forResult);
         NSLog(@"For-in measured time %f", endTime-startTime);
         
+        // Вариант с NSThread
+        startTime = [NSDate new].timeIntervalSince1970;
+        NSUInteger nsThreadResult = 0;
+        NSUInteger coresNumber = [[NSProcessInfo processInfo] activeProcessorCount];
+        
+        for 
+        
+        endTime = [NSDate new].timeIntervalSince1970;
+        
+        NSLog(@"NSThread result %lu", forResult);
+        NSLog(@"NSThread measured time %f", endTime-startTime);
+        
         
     }
     return 0;
 }
+
+void summingArray(NSUInteger index) {
+    NSUInteger addition = collection.count%maxThreadCount;
+    
+    NSUInteger length = collection.count/maxThreadCount;
+    NSUInteger step = collection.count/maxThreadCount;
+    
+    if ( addition!=0 && index==(maxThreadCount-1) ) {
+        length = length+addition;
+    }
+    
+    NSRange range = NSMakeRange(index*step, length);
+    
+    NSUInteger sum = 0;
+    for (NSUInteger i=range.location; i<(range.location+range.length);++i) {
+        sum = sum + collection[i].integerValue;
+        // NSLog(@"Thread: %lu number: %@", arguments->threadID, number);
+    }
+    
+    // В общую сумму пишем синхронно
+    [lock lock];
+    gcdResult = gcdResult + sum;
+    [lock unlock];
+}
+
 
 bool checkCondition(Task **threadArguments) {
     bool result = true;
@@ -192,10 +229,9 @@ void* threadEnumerateArray(void *args) {
     return SUCCESS;
 }
 
-
-        // GCD Block of code
- //       __block NSUInteger gcdResult = 0;
-  //      __block NSUInteger iterations = 0;
+// GCD Block of code
+//       __block NSUInteger gcdResult = 0;
+//      __block NSUInteger iterations = 0;
 //        dispatch_semaphore_t sincSem = dispatch_semaphore_create(0);
 //        dispatch_semaphore_t sem = dispatch_semaphore_create([collection count]);
 //        dispatch_apply([collection count], dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t index) {

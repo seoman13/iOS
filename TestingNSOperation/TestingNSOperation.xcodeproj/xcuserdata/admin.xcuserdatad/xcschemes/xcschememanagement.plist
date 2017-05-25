@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestingPOSIX.xcscheme</key>
+		<key>TestingNSOperation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>044A4F5B1ECE09B400697E26</key>
+		<key>045B38291ED0390E00897ECE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

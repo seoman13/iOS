@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         SWMRTest *test = [[SWMRTest alloc] init];
-        dispatch_apply(1000, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t iterations){
+        dispatch_apply(100, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t iterations){
             if (iterations%10 == 0) {
                 test.count += 1;
             }

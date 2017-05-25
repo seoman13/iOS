@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "044A4F5B1ECE09B400697E26"
-               BuildableName = "TestingPOSIX"
-               BlueprintName = "TestingPOSIX"
-               ReferencedContainer = "container:TestingPOSIX.xcodeproj">
+               BlueprintIdentifier = "0468F3151ED4B56F004DB281"
+               BuildableName = "SWMR"
+               BlueprintName = "SWMR"
+               ReferencedContainer = "container:SWMR.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "044A4F5B1ECE09B400697E26"
-            BuildableName = "TestingPOSIX"
-            BlueprintName = "TestingPOSIX"
-            ReferencedContainer = "container:TestingPOSIX.xcodeproj">
+            BlueprintIdentifier = "0468F3151ED4B56F004DB281"
+            BuildableName = "SWMR"
+            BlueprintName = "SWMR"
+            ReferencedContainer = "container:SWMR.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "044A4F5B1ECE09B400697E26"
-            BuildableName = "TestingPOSIX"
-            BlueprintName = "TestingPOSIX"
-            ReferencedContainer = "container:TestingPOSIX.xcodeproj">
+            BlueprintIdentifier = "0468F3151ED4B56F004DB281"
+            BuildableName = "SWMR"
+            BlueprintName = "SWMR"
+            ReferencedContainer = "container:SWMR.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "044A4F5B1ECE09B400697E26"
-            BuildableName = "TestingPOSIX"
-            BlueprintName = "TestingPOSIX"
-            ReferencedContainer = "container:TestingPOSIX.xcodeproj">
+            BlueprintIdentifier = "0468F3151ED4B56F004DB281"
+            BuildableName = "SWMR"
+            BlueprintName = "SWMR"
+            ReferencedContainer = "container:SWMR.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

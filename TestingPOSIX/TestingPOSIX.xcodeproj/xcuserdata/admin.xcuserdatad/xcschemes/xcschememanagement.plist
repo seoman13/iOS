@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestingGCD.xcscheme</key>
+		<key>TestingPOSIX.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0443D2261ECB63AE007D9769</key>
+		<key>84E17D331ED6E06D00EA3878</key>
 		<dict>
 			<key>primary</key>
 			<true/>
