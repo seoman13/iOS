@@ -10,6 +10,7 @@
 #import <pthread.h>
 
 @import Darwin.os.lock;
+#import "SummThread.h"
 
 #define SUCCESS 0
 
@@ -163,8 +164,18 @@ int main(int argc, const char * argv[]) {
         startTime = [NSDate new].timeIntervalSince1970;
         NSUInteger nsThreadResult = 0;
         NSUInteger coresNumber = [[NSProcessInfo processInfo] activeProcessorCount];
+        NSLock *threadLock = [NSLock new];
         
-        for 
+        for (NSUInteger i = 0; i < maxThreadCount; i++) {
+            SummThread *thr = [SummThread new];
+            thr.collection = collection;
+            thr.maxThreadCount = maxThreadCount;
+            thr.index = i;
+            [thr start];
+            
+            [threadLock lock];
+            nsThreadResult += 
+        }
         
         endTime = [NSDate new].timeIntervalSince1970;
         
