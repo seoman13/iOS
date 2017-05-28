@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Stick : NSObject
-@property(nonatomic) NSString *number;
--(void)takeStick;
 
--(void)putDownStick;
+@property (nonatomic) NSString *number;
+
+- (void)takeStick;
+- (void)putDownStick;
+
 @end

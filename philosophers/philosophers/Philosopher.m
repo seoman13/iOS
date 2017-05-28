@@ -11,13 +11,17 @@
 
 @implementation Philosopher
 
--(void)main{
-    [self.leftStick takeStick];
-    [self.rightStick takeStick];
-    NSLog(@"%@ is eating", self.name);
-    sleep(1);
-    [self.leftStick putDownStick];
-    [self.rightStick putDownStick];
+- (void)main {
+    @autoreleasepool {
+        NSLog(@"%@ is thinking", self.name);
+        [self.leftStick takeStick];
+        [self.rightStick takeStick];
+        NSLog(@"%@ is eating", self.name);
+        sleep(1);
+        [self.leftStick putDownStick];
+        [self.rightStick putDownStick];
+        NSLog(@"%@ has eaten", self.name);
+    }
 }
 
 @end

@@ -8,11 +8,14 @@
 
 #import "Stick.h"
 @interface Stick()
+
 @property(nonatomic) NSLock *stickLock;
+
 @end
 
 @implementation Stick
--(instancetype) init{
+
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.stickLock = [NSLock new];
@@ -20,11 +23,11 @@
     return self;
 }
 
--(void)takeStick{
+- (void)takeStick {
     [self.stickLock lock];
 }
 
--(void)putDownStick{
+- (void)putDownStick {
     [self.stickLock unlock];
 }
 

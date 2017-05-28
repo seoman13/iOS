@@ -10,7 +10,8 @@
 @class Stick;
 
 @interface Philosopher : NSThread
-@property(nonatomic, strong) Stick *leftStick;
-@property(nonatomic, strong) Stick *rightStick;
+
+@property (nonatomic, strong) Stick *leftStick;
+@property (nonatomic, strong) Stick *rightStick;
 
 @end
