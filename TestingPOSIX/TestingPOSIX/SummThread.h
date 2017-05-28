@@ -10,11 +10,12 @@
 
 @interface SummThread : NSThread
 
-@property (nonatomic, strong) NSArray *collection;
+@property (nonatomic, copy) NSArray<NSNumber *> *collection;
 @property (nonatomic, assign) NSUInteger maxThreadCount;
 @property (nonatomic, assign) NSUInteger index;
 @property (nonatomic, assign) NSUInteger nsThreadResult;
-@property (nonatomic, assign) NSLock *condition;
+@property (nonatomic, strong) NSCondition *condition;
 @property (nonatomic) NSUInteger *nsThreadResultAddress;
+@property (atomic) NSUInteger *threadsWorking;
 
 @end

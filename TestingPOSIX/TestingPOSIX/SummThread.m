@@ -23,13 +23,13 @@
     NSRange range = NSMakeRange(_index*step, length);
     NSUInteger sum = 0;
     for (NSUInteger i=range.location; i<(range.location+range.length);++i) {
-        sum = sum + (NSUInteger)_collection[i];
+        sum = sum + _collection[i].integerValue;
     }
 
-//    NSLog(@"Thread: %@ number: %lu", self.name, sum);
     [self.condition lock];
     *(_nsThreadResultAddress) = *(_nsThreadResultAddress) + sum;
-//    [self.condition signal];
+    *(self.threadsWorking) = *(self.threadsWorking) - 1;
+    [self.condition signal];
     [self.condition unlock];
 }
 

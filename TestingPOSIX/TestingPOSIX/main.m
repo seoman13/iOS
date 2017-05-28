@@ -135,7 +135,6 @@ int main(int argc, const char * argv[]) {
             }
             
             NSRange range = NSMakeRange(index*step, length);
-            NSLog(@"%lu, %lu", range.length, range.location);
             NSUInteger sum = 0;
             for (NSUInteger i=range.location; i<(range.location+range.length);++i) {
                 sum = sum + collection[i].integerValue;
@@ -164,8 +163,8 @@ int main(int argc, const char * argv[]) {
         // Вариант с NSThread
         startTime = [NSDate new].timeIntervalSince1970;
         NSUInteger nsThreadResult = 0;
-        NSLock *threadLock = [NSLock new];
         NSCondition *condition = [[NSCondition alloc] init];
+        NSUInteger threadsWorking = maxThreadCount;
         
         for (NSUInteger i = 0; i < maxThreadCount; i++) {
             SummThread *thr = [SummThread new];
@@ -173,12 +172,16 @@ int main(int argc, const char * argv[]) {
             thr.collection = collection;
             thr.maxThreadCount = maxThreadCount;
             thr.index = i;
-//            thr.condition = condition;
-            thr.condition = threadLock;
+            thr.condition = condition;
             thr.nsThreadResultAddress = &nsThreadResult;
+            thr.threadsWorking = &threadsWorking;
             [thr start];
         }
-        sleep(5);
+        [condition lock];
+        while (threadsWorking) {
+            [condition wait];
+        }
+        [condition unlock];
         
         endTime = [NSDate new].timeIntervalSince1970;
         
