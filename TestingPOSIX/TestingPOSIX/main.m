@@ -19,6 +19,8 @@
 static NSArray<NSNumber *> *collection;
 static NSUInteger maxThreadCount;
 
+extern NSUInteger threadResult;
+
 pthread_mutex_t condVarMutex;
 pthread_cond_t condVar;
 
@@ -133,13 +135,12 @@ int main(int argc, const char * argv[]) {
             }
             
             NSRange range = NSMakeRange(index*step, length);
-            
+            NSLog(@"%lu, %lu", range.length, range.location);
             NSUInteger sum = 0;
             for (NSUInteger i=range.location; i<(range.location+range.length);++i) {
                 sum = sum + collection[i].integerValue;
-                // NSLog(@"Thread: %lu number: %@", arguments->threadID, number);
             }
-            
+//            NSLog(@"Thread: %lu number: %lu", index, sum);
             // В общую сумму пишем синхронно
             [lock lock];
             gcdResult = gcdResult + sum;
@@ -163,54 +164,31 @@ int main(int argc, const char * argv[]) {
         // Вариант с NSThread
         startTime = [NSDate new].timeIntervalSince1970;
         NSUInteger nsThreadResult = 0;
-        NSUInteger coresNumber = [[NSProcessInfo processInfo] activeProcessorCount];
         NSLock *threadLock = [NSLock new];
+        NSCondition *condition = [[NSCondition alloc] init];
         
         for (NSUInteger i = 0; i < maxThreadCount; i++) {
             SummThread *thr = [SummThread new];
+            thr.name = [NSString stringWithFormat:@"%lu", i];
             thr.collection = collection;
             thr.maxThreadCount = maxThreadCount;
             thr.index = i;
+//            thr.condition = condition;
+            thr.condition = threadLock;
+            thr.nsThreadResultAddress = &nsThreadResult;
             [thr start];
-            
-            [threadLock lock];
-            nsThreadResult += 
         }
+        sleep(5);
         
         endTime = [NSDate new].timeIntervalSince1970;
         
-        NSLog(@"NSThread result %lu", forResult);
+        NSLog(@"NSThread result %lu", nsThreadResult);
         NSLog(@"NSThread measured time %f", endTime-startTime);
         
         
     }
     return 0;
 }
-
-void summingArray(NSUInteger index) {
-    NSUInteger addition = collection.count%maxThreadCount;
-    
-    NSUInteger length = collection.count/maxThreadCount;
-    NSUInteger step = collection.count/maxThreadCount;
-    
-    if ( addition!=0 && index==(maxThreadCount-1) ) {
-        length = length+addition;
-    }
-    
-    NSRange range = NSMakeRange(index*step, length);
-    
-    NSUInteger sum = 0;
-    for (NSUInteger i=range.location; i<(range.location+range.length);++i) {
-        sum = sum + collection[i].integerValue;
-        // NSLog(@"Thread: %lu number: %@", arguments->threadID, number);
-    }
-    
-    // В общую сумму пишем синхронно
-    [lock lock];
-    gcdResult = gcdResult + sum;
-    [lock unlock];
-}
-
 
 bool checkCondition(Task **threadArguments) {
     bool result = true;
@@ -239,15 +217,3 @@ void* threadEnumerateArray(void *args) {
     pthread_mutex_unlock(&condVarMutex);
     return SUCCESS;
 }
-
-// GCD Block of code
-//       __block NSUInteger gcdResult = 0;
-//      __block NSUInteger iterations = 0;
-//        dispatch_semaphore_t sincSem = dispatch_semaphore_create(0);
-//        dispatch_semaphore_t sem = dispatch_semaphore_create([collection count]);
-//        dispatch_apply([collection count], dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t index) {
-//            os_unfair_lock_lock(&lock);
-//            os_unfair_lock_unlock(&lock);
-//            dispatch_semaphore_signal(sincSem);
-//            dispatch_semaphore_signal(sem);
-//        dispatch_semaphore_wait(sincSem, DISPATCH_TIME_FOREVER);

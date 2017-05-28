@@ -13,6 +13,8 @@
 @property (nonatomic, strong) NSArray *collection;
 @property (nonatomic, assign) NSUInteger maxThreadCount;
 @property (nonatomic, assign) NSUInteger index;
-@property (nonatomic) NSUInteger nsThreadResult;
+@property (nonatomic, assign) NSUInteger nsThreadResult;
+@property (nonatomic, assign) NSLock *condition;
+@property (nonatomic) NSUInteger *nsThreadResultAddress;
 
 @end
