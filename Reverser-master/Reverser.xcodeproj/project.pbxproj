@@ -133,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				0C270A821E6196320099EBB0 /* ReverserTests.m */,
-				0C270A841E6196320099EBB0 /* Info.plist */,
 				0447346E1E9FFAC300ABBCBD /* UppercaseTest.m */,
+				0C270A841E6196320099EBB0 /* Info.plist */,
 			);
 			path = ReverserTests;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 		0C270A8C1E6196320099EBB0 /* ReverserUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0C270A8F1E6196320099EBB0 /* Info.plist */,
 				0C270A8D1E6196320099EBB0 /* ReverserUITests.m */,
+				0C270A8F1E6196320099EBB0 /* Info.plist */,
 			);
 			path = ReverserUITests;
 			sourceTree = "<group>";
