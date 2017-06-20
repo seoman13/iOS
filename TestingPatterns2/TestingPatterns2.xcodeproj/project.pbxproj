@@ -16,6 +16,7 @@
 		0460B2FF1EF99B2A00581BD8 /* StrategyAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2FE1EF99B2A00581BD8 /* StrategyAdd.m */; };
 		0460B3021EF99BA400581BD8 /* StrategySubtract.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3011EF99BA400581BD8 /* StrategySubtract.m */; };
 		0460B3061EF99D0B00581BD8 /* StrategyMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3051EF99D0B00581BD8 /* StrategyMultiply.m */; };
+		0460B3091EF9A4D600581BD8 /* AbstractOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3081EF9A4D600581BD8 /* AbstractOrder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		0460B3011EF99BA400581BD8 /* StrategySubtract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategySubtract.m; sourceTree = "<group>"; };
 		0460B3041EF99D0B00581BD8 /* StrategyMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyMultiply.h; sourceTree = "<group>"; };
 		0460B3051EF99D0B00581BD8 /* StrategyMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyMultiply.m; sourceTree = "<group>"; };
+		0460B3071EF9A4D600581BD8 /* AbstractOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractOrder.h; sourceTree = "<group>"; };
+		0460B3081EF9A4D600581BD8 /* AbstractOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractOrder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				0460B2DF1EF9865000581BD8 /* main.m */,
+				0460B3071EF9A4D600581BD8 /* AbstractOrder.h */,
+				0460B3081EF9A4D600581BD8 /* AbstractOrder.m */,
 				0460B3031EF99CF200581BD8 /* StrategyPattern */,
 				0460B2F81EF98FAC00581BD8 /* AdapterPattern */,
 				0460B2ED1EF98CAF00581BD8 /* DecoratorPattern */,
@@ -189,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0460B3091EF9A4D600581BD8 /* AbstractOrder.m in Sources */,
 				0460B3021EF99BA400581BD8 /* StrategySubtract.m in Sources */,
 				0460B2E01EF9865000581BD8 /* main.m in Sources */,
 				0460B2FC1EF99A6C00581BD8 /* Context.m in Sources */,
