@@ -19,7 +19,7 @@
 - (instancetype)initWith:(id<StringPrinter>)printer {
     self = [super init];
     if (self) {
-        self.printer = printer;
+        _printer = printer;
     }
     return self;
 }
