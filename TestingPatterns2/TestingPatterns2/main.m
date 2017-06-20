@@ -13,6 +13,11 @@
 #import "Raven.h"
 #import "RavenAdapter.h"
 #import "BirdProtocol.h"
+#import "Strategy.h"
+#import "Context.h"
+#import "StrategyAdd.h"
+#import "StrategySubtract.h"
+#import "StrategyMultiply.h"
 
 @interface Report : NSObject
 
@@ -44,6 +49,15 @@ int main(int argc, const char * argv[]) {
         [ravenAdapter fly];
         [raven voice];
         [ravenAdapter sing];
+        
+        // STRATEGY PATTERN
+        Context *context = [Context new];
+        context.strategy = [StrategyAdd new];
+        NSLog(@"%i", [context.strategy executeWithA:2 B:3]);
+        context.strategy = [StrategySubtract new];
+        NSLog(@"%i", [context.strategy executeWithA:20 B:5]);
+        context.strategy = [StrategyMultiply new];
+        NSLog(@"%i", [context.strategy executeWithA:3 B:4]);
     }
     return 0;
 }

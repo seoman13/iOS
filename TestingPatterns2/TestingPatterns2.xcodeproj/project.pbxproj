@@ -12,6 +12,10 @@
 		0460B2EC1EF9875900581BD8 /* PrinterDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2EB1EF9875900581BD8 /* PrinterDecorator.m */; };
 		0460B2F41EF98D9300581BD8 /* Raven.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2F31EF98D9300581BD8 /* Raven.m */; };
 		0460B2F71EF98E2700581BD8 /* RavenAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2F61EF98E2700581BD8 /* RavenAdapter.m */; };
+		0460B2FC1EF99A6C00581BD8 /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2FB1EF99A6C00581BD8 /* Context.m */; };
+		0460B2FF1EF99B2A00581BD8 /* StrategyAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B2FE1EF99B2A00581BD8 /* StrategyAdd.m */; };
+		0460B3021EF99BA400581BD8 /* StrategySubtract.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3011EF99BA400581BD8 /* StrategySubtract.m */; };
+		0460B3061EF99D0B00581BD8 /* StrategyMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B3051EF99D0B00581BD8 /* StrategyMultiply.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +43,15 @@
 		0460B2F31EF98D9300581BD8 /* Raven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Raven.m; sourceTree = "<group>"; };
 		0460B2F51EF98E2700581BD8 /* RavenAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenAdapter.h; sourceTree = "<group>"; };
 		0460B2F61EF98E2700581BD8 /* RavenAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenAdapter.m; sourceTree = "<group>"; };
+		0460B2F91EF99A0600581BD8 /* Strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
+		0460B2FA1EF99A6C00581BD8 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		0460B2FB1EF99A6C00581BD8 /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		0460B2FD1EF99B2A00581BD8 /* StrategyAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyAdd.h; sourceTree = "<group>"; };
+		0460B2FE1EF99B2A00581BD8 /* StrategyAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyAdd.m; sourceTree = "<group>"; };
+		0460B3001EF99BA400581BD8 /* StrategySubtract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategySubtract.h; sourceTree = "<group>"; };
+		0460B3011EF99BA400581BD8 /* StrategySubtract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategySubtract.m; sourceTree = "<group>"; };
+		0460B3041EF99D0B00581BD8 /* StrategyMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyMultiply.h; sourceTree = "<group>"; };
+		0460B3051EF99D0B00581BD8 /* StrategyMultiply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyMultiply.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0460B2DF1EF9865000581BD8 /* main.m */,
+				0460B3031EF99CF200581BD8 /* StrategyPattern */,
 				0460B2F81EF98FAC00581BD8 /* AdapterPattern */,
 				0460B2ED1EF98CAF00581BD8 /* DecoratorPattern */,
 			);
@@ -100,6 +114,22 @@
 				0460B2F61EF98E2700581BD8 /* RavenAdapter.m */,
 			);
 			name = AdapterPattern;
+			sourceTree = "<group>";
+		};
+		0460B3031EF99CF200581BD8 /* StrategyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				0460B2F91EF99A0600581BD8 /* Strategy.h */,
+				0460B2FA1EF99A6C00581BD8 /* Context.h */,
+				0460B2FB1EF99A6C00581BD8 /* Context.m */,
+				0460B2FD1EF99B2A00581BD8 /* StrategyAdd.h */,
+				0460B2FE1EF99B2A00581BD8 /* StrategyAdd.m */,
+				0460B3001EF99BA400581BD8 /* StrategySubtract.h */,
+				0460B3011EF99BA400581BD8 /* StrategySubtract.m */,
+				0460B3041EF99D0B00581BD8 /* StrategyMultiply.h */,
+				0460B3051EF99D0B00581BD8 /* StrategyMultiply.m */,
+			);
+			name = StrategyPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0460B3021EF99BA400581BD8 /* StrategySubtract.m in Sources */,
 				0460B2E01EF9865000581BD8 /* main.m in Sources */,
+				0460B2FC1EF99A6C00581BD8 /* Context.m in Sources */,
 				0460B2F71EF98E2700581BD8 /* RavenAdapter.m in Sources */,
 				0460B2EC1EF9875900581BD8 /* PrinterDecorator.m in Sources */,
+				0460B3061EF99D0B00581BD8 /* StrategyMultiply.m in Sources */,
+				0460B2FF1EF99B2A00581BD8 /* StrategyAdd.m in Sources */,
 				0460B2F41EF98D9300581BD8 /* Raven.m in Sources */,
 				0460B2E91EF986D900581BD8 /* PlainPrinter.m in Sources */,
 			);
