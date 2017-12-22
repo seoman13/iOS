@@ -1,0 +1,86 @@
+
+PACING FUNCTIONS:
+- Linear
+- Ease in, where your animation starts out slowly and then reaches full speed.
+- Ease out, where your animation starts out at full speed and then slows as it reaches
+its destination value.
+- Ease in, ease out, where your animation starts out slow, speeds up in the middle,
+and then slows down again as it reaches its destination value; this is the default
+behavior.
+
+http://www.cimgf.com/2008/03/15/core-animationtutorial-dashboard-effect/.
+
+COLOR
+Color fields that you can animate include
+- backgroundColor
+The layer’s background color.
+- borderColor
+The color of the layer’s border.
+- shadowColor
+The color of the layer’s shadow. At the time of this writing, the shadowColor property
+is not available on the iPhone.
+
+MOTION
+When you want motion on the screen, Core Animation provides rectangles and points in
+each layer that you can animate. Motion fields you can animate include
+- anchorPoint
+The default anchorPoint of a layer is 0.5,0.5, which indicates the center of the
+layer is the anchorPoint. If you change the anchorPoint to 0.0,0.0, it will be
+located at the bottom-left corner.
+- bounds
+The bounds property animates the shape of the bounding rectangle. It does not
+affect the layer’s position.
+- frame
+The frame property is not animated in a layer. You can set this parameter and the
+layer’s internal value with change; however, you won’t see the actual animation. If
+you want to animate a layer’s bounds, that is, its bounding rectangle, use the bounds
+property. If you want to change the position, use the position property. On views
+and windows, setting frame causes the bounding frame to animate.
+- position
+Use the position property to move a layer’s position. The position is dependant
+upon the anchorPoint property. If you want to center a layer in its parent view,
+leave the anchorPoint at the default of 0.5,0.5 and then calculate the center of the
+parent view. Listing 2-3 demonstrates how to center the layer.
+- zPosition
+The zPosition property controls the z-index of the layer. This determines the layer’s
+position from front to back. It can be animated to transition one layer on top of
+another.
+
+ATTRIBUTES
+Each visible characteristic of a layer can also be animated. These are referred to as
+attributes because they are the fields that affect the visible attributes of the layer.
+Attribute fields that you can animate include
+- borderWidth
+The borderWidth property sets the width of the border that surrounds the layer.
+- cornerRadius
+The cornerRadius property sets the radius of the corners of the layer giving the
+layer a rounded rectangle look.
+
+VISIBILITY
+Layer’s are visible components, but you can determine how visible. Sometimes, you need
+to see through partially or completely. You control this with the visibility fields.
+Visibility fields that you can animate include the following:
+- opacity
+The opacity property determines the layer’s opacity. A value of 1.0 sets the layer to
+fully opaque, and a value of 0.0 sets the layer to fully transparent. Use values in
+between to set just how opaque you want your layer to be.
+- hidden
+In theory, the hidden property is animatable; however, it’s actually just an On or
+Off switch. If you want to animate the visibility of a layer, use the opacity property
+instead of hidden.
+
+FILTERS
+When used in conjunction with Core Image, Core Animation layers can have complex
+filters applied to them by setting one or more of the filter fields. Core Image filters are
+not, at the time of this writing, available on the iPhone.
+Filter fields that you can animate include the following:
+- filters
+The filters property is an array of filters that you can apply directly to the layer’s
+content. It affects the entire layer, including the border and background.
+- compositingFilter
+Different from the filters property, the compositingFilter property uses a single
+filter as its parameter.
+- backgroundFilters
+The backgroundFilters property provides a way for you to apply filters to the
+layer’s background only.
+
