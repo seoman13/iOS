@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E75AC81ED9776000E2AD8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E75AC71ED9776000E2AD8E /* main.m */; };
+		04E75ACB1ED9776000E2AD8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E75ACA1ED9776000E2AD8E /* AppDelegate.m */; };
+		04E75AD11ED9776000E2AD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E75ACF1ED9776000E2AD8E /* Main.storyboard */; };
+		04E75AD31ED9776000E2AD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E75AD21ED9776000E2AD8E /* Assets.xcassets */; };
+		04E75AD61ED9776000E2AD8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E75AD41ED9776000E2AD8E /* LaunchScreen.storyboard */; };
+		04E75ADF1ED977BC00E2AD8E /* FBSearchPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E75ADE1ED977BC00E2AD8E /* FBSearchPanelViewController.m */; };
+		04E75AE21ED97A5600E2AD8E /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E75AE11ED97A5600E2AD8E /* Masonry.framework */; };
+		04E75AE61ED9810900E2AD8E /* FBFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E75AE51ED9810900E2AD8E /* FBFavoriteViewController.m */; };
+		840A823D1EFDD126005977D0 /* FBDataLoaderFromFlickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A823C1EFDD126005977D0 /* FBDataLoaderFromFlickr.m */; };
+		8454ADE71F0168A500AC8CED /* FBPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454ADE61F0168A500AC8CED /* FBPictureCell.m */; };
+		8454ADEE1F01765300AC8CED /* FBImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454ADED1F01765300AC8CED /* FBImageCropper.m */; };
+		8454ADF11F01766700AC8CED /* FBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454ADF01F01766700AC8CED /* FBImageLoader.m */; };
+		8454ADF41F01771200AC8CED /* FBImageLoadingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454ADF31F01771200AC8CED /* FBImageLoadingOperation.m */; };
+		8454ADF81F017D1400AC8CED /* FBImageSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8454ADF71F017D1400AC8CED /* FBImageSetter.m */; };
+		845FA4231F02596000CC83DF /* FBImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 845FA4221F02596000CC83DF /* FBImageManager.m */; };
+		8472ED931F0FB641002EAD7F /* SanFranciscoDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8472ED891F0F9FF3002EAD7F /* SanFranciscoDisplay-Medium.otf */; };
+		8472ED991F0FC0E0002EAD7F /* SFUIText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8472ED981F0FC0E0002EAD7F /* SFUIText-Medium.otf */; };
+		8472ED9B1F0FC0FF002EAD7F /* SFUIText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8472ED9A1F0FC0FF002EAD7F /* SFUIText-Regular.otf */; };
+		848E11FC1F16AA0A00B3F399 /* FBCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11FB1F16AA0A00B3F399 /* FBCustomCollectionViewLayout.m */; };
+		84AC80E61F0111ED00BCB694 /* FBDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC80E51F0111ED00BCB694 /* FBDataParser.m */; };
+		84AC80E81F0134FE00BCB694 /* FBDataParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC80E71F0134FE00BCB694 /* FBDataParserTests.m */; };
+		84B0BBDF1EFFF74E006DD2E0 /* FBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BBDE1EFFF74E006DD2E0 /* FBRouter.m */; };
+		84B0BBE21F0048A6006DD2E0 /* FBNetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BBE11F0048A6006DD2E0 /* FBNetworkConstants.m */; };
+		84B0BBE41F005584006DD2E0 /* FBRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0BBE31F005584006DD2E0 /* FBRouterTests.m */; };
+		84DEE89D1EDCD58500E2E7FC /* FBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DEE89C1EDCD58500E2E7FC /* FBSettingsViewController.m */; };
+		84E7420D1EE26D010049EC92 /* FBPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7420C1EE26D010049EC92 /* FBPostViewController.m */; };
+		84E742101EE26DB70049EC92 /* FBPictureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7420F1EE26DB70049EC92 /* FBPictureItem.m */; };
+		84E8D4DB1EFDA98500656409 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D4D91EFDA98500656409 /* Model.xcdatamodeld */; };
+		84E8D4DE1EFDAB6D00656409 /* FBDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D4DD1EFDAB6D00656409 /* FBDatabaseManager.m */; };
+		84E8D4E11EFDAC6400656409 /* FBSearchBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D4E01EFDAC6400656409 /* FBSearchBarDelegate.m */; };
+		84E8D4E61EFDB0D200656409 /* FBCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D4E51EFDB0D200656409 /* FBCollectionViewDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84B0BBD71EFFF422006DD2E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E75ABB1ED9776000E2AD8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E75AC21ED9776000E2AD8E;
+			remoteInfo = FlickrBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E75AC31ED9776000E2AD8E /* FlickrBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E75AC71ED9776000E2AD8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04E75AC91ED9776000E2AD8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04E75ACA1ED9776000E2AD8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04E75AD01ED9776000E2AD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04E75AD21ED9776000E2AD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04E75AD51ED9776000E2AD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04E75AD71ED9776000E2AD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E75ADD1ED977BC00E2AD8E /* FBSearchPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSearchPanelViewController.h; sourceTree = "<group>"; };
+		04E75ADE1ED977BC00E2AD8E /* FBSearchPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSearchPanelViewController.m; sourceTree = "<group>"; };
+		04E75AE11ED97A5600E2AD8E /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
+		04E75AE41ED9810900E2AD8E /* FBFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFavoriteViewController.h; sourceTree = "<group>"; };
+		04E75AE51ED9810900E2AD8E /* FBFavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFavoriteViewController.m; sourceTree = "<group>"; };
+		840A823B1EFDD126005977D0 /* FBDataLoaderFromFlickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDataLoaderFromFlickr.h; sourceTree = "<group>"; };
+		840A823C1EFDD126005977D0 /* FBDataLoaderFromFlickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDataLoaderFromFlickr.m; sourceTree = "<group>"; };
+		8454ADE51F0168A500AC8CED /* FBPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPictureCell.h; sourceTree = "<group>"; };
+		8454ADE61F0168A500AC8CED /* FBPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPictureCell.m; sourceTree = "<group>"; };
+		8454ADEC1F01765300AC8CED /* FBImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBImageCropper.h; sourceTree = "<group>"; };
+		8454ADED1F01765300AC8CED /* FBImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBImageCropper.m; sourceTree = "<group>"; };
+		8454ADEF1F01766700AC8CED /* FBImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBImageLoader.h; sourceTree = "<group>"; };
+		8454ADF01F01766700AC8CED /* FBImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBImageLoader.m; sourceTree = "<group>"; };
+		8454ADF21F01771200AC8CED /* FBImageLoadingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBImageLoadingOperation.h; sourceTree = "<group>"; };
+		8454ADF31F01771200AC8CED /* FBImageLoadingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBImageLoadingOperation.m; sourceTree = "<group>"; };
+		8454ADF61F017D1400AC8CED /* FBImageSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBImageSetter.h; sourceTree = "<group>"; };
+		8454ADF71F017D1400AC8CED /* FBImageSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBImageSetter.m; sourceTree = "<group>"; };
+		845FA4211F02596000CC83DF /* FBImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBImageManager.h; sourceTree = "<group>"; };
+		845FA4221F02596000CC83DF /* FBImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBImageManager.m; sourceTree = "<group>"; };
+		8472ED891F0F9FF3002EAD7F /* SanFranciscoDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Medium.otf"; sourceTree = "<group>"; };
+		8472ED981F0FC0E0002EAD7F /* SFUIText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.otf"; sourceTree = "<group>"; };
+		8472ED9A1F0FC0FF002EAD7F /* SFUIText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.otf"; sourceTree = "<group>"; };
+		848E11FA1F16AA0A00B3F399 /* FBCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		848E11FB1F16AA0A00B3F399 /* FBCustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCustomCollectionViewLayout.m; sourceTree = "<group>"; };
+		848E11FD1F16B00F00B3F399 /* FBCustomLayoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCustomLayoutDelegate.h; sourceTree = "<group>"; };
+		84AC80E41F0111ED00BCB694 /* FBDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDataParser.h; sourceTree = "<group>"; };
+		84AC80E51F0111ED00BCB694 /* FBDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDataParser.m; sourceTree = "<group>"; };
+		84AC80E71F0134FE00BCB694 /* FBDataParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDataParserTests.m; sourceTree = "<group>"; };
+		84B0BBD21EFFF421006DD2E0 /* FlickrBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B0BBD61EFFF422006DD2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B0BBDD1EFFF74E006DD2E0 /* FBRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRouter.h; sourceTree = "<group>"; };
+		84B0BBDE1EFFF74E006DD2E0 /* FBRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRouter.m; sourceTree = "<group>"; };
+		84B0BBE01F0048A6006DD2E0 /* FBNetworkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNetworkConstants.h; sourceTree = "<group>"; };
+		84B0BBE11F0048A6006DD2E0 /* FBNetworkConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNetworkConstants.m; sourceTree = "<group>"; };
+		84B0BBE31F005584006DD2E0 /* FBRouterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRouterTests.m; sourceTree = "<group>"; };
+		84DEE89B1EDCD58500E2E7FC /* FBSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSettingsViewController.h; sourceTree = "<group>"; };
+		84DEE89C1EDCD58500E2E7FC /* FBSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSettingsViewController.m; sourceTree = "<group>"; };
+		84E7420B1EE26D010049EC92 /* FBPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPostViewController.h; sourceTree = "<group>"; };
+		84E7420C1EE26D010049EC92 /* FBPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPostViewController.m; sourceTree = "<group>"; };
+		84E7420E1EE26DB70049EC92 /* FBPictureItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPictureItem.h; sourceTree = "<group>"; };
+		84E7420F1EE26DB70049EC92 /* FBPictureItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPictureItem.m; sourceTree = "<group>"; };
+		84E8D4DA1EFDA98500656409 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		84E8D4DC1EFDAB6D00656409 /* FBDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDatabaseManager.h; sourceTree = "<group>"; };
+		84E8D4DD1EFDAB6D00656409 /* FBDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDatabaseManager.m; sourceTree = "<group>"; };
+		84E8D4DF1EFDAC6400656409 /* FBSearchBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSearchBarDelegate.h; sourceTree = "<group>"; };
+		84E8D4E01EFDAC6400656409 /* FBSearchBarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSearchBarDelegate.m; sourceTree = "<group>"; };
+		84E8D4E41EFDB0D200656409 /* FBCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCollectionViewDelegate.h; sourceTree = "<group>"; };
+		84E8D4E51EFDB0D200656409 /* FBCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCollectionViewDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E75AC01ED9776000E2AD8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E75AE21ED97A5600E2AD8E /* Masonry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B0BBCF1EFFF421006DD2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04382FBB1EE2A1A200DD8A9B /* PictureItem */ = {
+			isa = PBXGroup;
+			children = (
+				84E7420E1EE26DB70049EC92 /* FBPictureItem.h */,
+				84E7420F1EE26DB70049EC92 /* FBPictureItem.m */,
+			);
+			name = PictureItem;
+			sourceTree = "<group>";
+		};
+		046458CE1EDDCF9B00131AA1 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84DEE89B1EDCD58500E2E7FC /* FBSettingsViewController.h */,
+				84DEE89C1EDCD58500E2E7FC /* FBSettingsViewController.m */,
+			);
+			name = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		046458CF1EDDCFB300131AA1 /* SearchPanelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04E75ADD1ED977BC00E2AD8E /* FBSearchPanelViewController.h */,
+				04E75ADE1ED977BC00E2AD8E /* FBSearchPanelViewController.m */,
+			);
+			name = SearchPanelViewController;
+			sourceTree = "<group>";
+		};
+		046458D01EDDCFCE00131AA1 /* FavoriteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04E75AE41ED9810900E2AD8E /* FBFavoriteViewController.h */,
+				04E75AE51ED9810900E2AD8E /* FBFavoriteViewController.m */,
+			);
+			name = FavoriteViewController;
+			sourceTree = "<group>";
+		};
+		04E75ABA1ED9776000E2AD8E = {
+			isa = PBXGroup;
+			children = (
+				04E75AC51ED9776000E2AD8E /* FlickrBrowser */,
+				84B0BBD31EFFF421006DD2E0 /* FlickrBrowserTests */,
+				04E75AC41ED9776000E2AD8E /* Products */,
+				04E75AE01ED97A5500E2AD8E /* Frameworks */,
+				84C58BE81EDDB33700E6DAD8 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		04E75AC41ED9776000E2AD8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E75AC31ED9776000E2AD8E /* FlickrBrowser.app */,
+				84B0BBD21EFFF421006DD2E0 /* FlickrBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E75AC51ED9776000E2AD8E /* FlickrBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D4D81EFDA8E700656409 /* CoreData */,
+				84E8D4D31EFDA77500656409 /* Views */,
+				84E8D4D51EFDA78500656409 /* Models */,
+				84E8D4D41EFDA77D00656409 /* ViewControllers */,
+				04E75AC91ED9776000E2AD8E /* AppDelegate.h */,
+				04E75ACA1ED9776000E2AD8E /* AppDelegate.m */,
+				04E75AD71ED9776000E2AD8E /* Info.plist */,
+				84E8D4D21EFDA71300656409 /* Resources */,
+				04E75AC61ED9776000E2AD8E /* Supporting Files */,
+			);
+			path = FlickrBrowser;
+			sourceTree = "<group>";
+		};
+		04E75AC61ED9776000E2AD8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E75AC71ED9776000E2AD8E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04E75AE01ED97A5500E2AD8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E75AE11ED97A5600E2AD8E /* Masonry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840A823E1EFDD12D005977D0 /* DataLoaderFromFlickr */ = {
+			isa = PBXGroup;
+			children = (
+				840A823B1EFDD126005977D0 /* FBDataLoaderFromFlickr.h */,
+				840A823C1EFDD126005977D0 /* FBDataLoaderFromFlickr.m */,
+			);
+			name = DataLoaderFromFlickr;
+			sourceTree = "<group>";
+		};
+		844C648D1F0F9C2D00FCBE94 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8472ED981F0FC0E0002EAD7F /* SFUIText-Medium.otf */,
+				8472ED9A1F0FC0FF002EAD7F /* SFUIText-Regular.otf */,
+				8472ED891F0F9FF3002EAD7F /* SanFranciscoDisplay-Medium.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		8454ADE81F01726100AC8CED /* PictureCell */ = {
+			isa = PBXGroup;
+			children = (
+				8454ADE51F0168A500AC8CED /* FBPictureCell.h */,
+				8454ADE61F0168A500AC8CED /* FBPictureCell.m */,
+			);
+			name = PictureCell;
+			sourceTree = "<group>";
+		};
+		8454ADE91F01761500AC8CED /* ImageManipulations */ = {
+			isa = PBXGroup;
+			children = (
+				845FA41F1F02592D00CC83DF /* ImageManager */,
+				8454ADF51F017CFF00AC8CED /* ImageSetter */,
+				8454ADEB1F01763800AC8CED /* ImageCropper */,
+			);
+			name = ImageManipulations;
+			sourceTree = "<group>";
+		};
+		8454ADEA1F01762D00AC8CED /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				8454ADEF1F01766700AC8CED /* FBImageLoader.h */,
+				8454ADF01F01766700AC8CED /* FBImageLoader.m */,
+				8454ADF21F01771200AC8CED /* FBImageLoadingOperation.h */,
+				8454ADF31F01771200AC8CED /* FBImageLoadingOperation.m */,
+			);
+			name = ImageLoader;
+			sourceTree = "<group>";
+		};
+		8454ADEB1F01763800AC8CED /* ImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				8454ADEC1F01765300AC8CED /* FBImageCropper.h */,
+				8454ADED1F01765300AC8CED /* FBImageCropper.m */,
+			);
+			name = ImageCropper;
+			sourceTree = "<group>";
+		};
+		8454ADF51F017CFF00AC8CED /* ImageSetter */ = {
+			isa = PBXGroup;
+			children = (
+				8454ADF61F017D1400AC8CED /* FBImageSetter.h */,
+				8454ADF71F017D1400AC8CED /* FBImageSetter.m */,
+			);
+			name = ImageSetter;
+			sourceTree = "<group>";
+		};
+		845FA41F1F02592D00CC83DF /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				845FA4211F02596000CC83DF /* FBImageManager.h */,
+				845FA4221F02596000CC83DF /* FBImageManager.m */,
+			);
+			name = ImageManager;
+			sourceTree = "<group>";
+		};
+		8472ED9C1F12ED22002EAD7F /* NetworkConstants */ = {
+			isa = PBXGroup;
+			children = (
+				84B0BBE01F0048A6006DD2E0 /* FBNetworkConstants.h */,
+				84B0BBE11F0048A6006DD2E0 /* FBNetworkConstants.m */,
+			);
+			name = NetworkConstants;
+			sourceTree = "<group>";
+		};
+		84AC80E31F010E8900BCB694 /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+				84AC80E41F0111ED00BCB694 /* FBDataParser.h */,
+				84AC80E51F0111ED00BCB694 /* FBDataParser.m */,
+			);
+			name = DataParser;
+			sourceTree = "<group>";
+		};
+		84B0BBD31EFFF421006DD2E0 /* FlickrBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				84B0BBE31F005584006DD2E0 /* FBRouterTests.m */,
+				84AC80E71F0134FE00BCB694 /* FBDataParserTests.m */,
+				84B0BBD61EFFF422006DD2E0 /* Info.plist */,
+			);
+			path = FlickrBrowserTests;
+			sourceTree = "<group>";
+		};
+		84B0BBDC1EFFF726006DD2E0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84B0BBDD1EFFF74E006DD2E0 /* FBRouter.h */,
+				84B0BBDE1EFFF74E006DD2E0 /* FBRouter.m */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		84C58BE81EDDB33700E6DAD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		84E7420A1EE26CA70049EC92 /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84E7420B1EE26D010049EC92 /* FBPostViewController.h */,
+				84E7420C1EE26D010049EC92 /* FBPostViewController.m */,
+			);
+			name = PostViewController;
+			sourceTree = "<group>";
+		};
+		84E8D4D21EFDA71300656409 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				844C648D1F0F9C2D00FCBE94 /* Fonts */,
+				04E75ACF1ED9776000E2AD8E /* Main.storyboard */,
+				04E75AD21ED9776000E2AD8E /* Assets.xcassets */,
+				04E75AD41ED9776000E2AD8E /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		84E8D4D31EFDA77500656409 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8454ADE81F01726100AC8CED /* PictureCell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84E8D4D41EFDA77D00656409 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				046458CF1EDDCFB300131AA1 /* SearchPanelViewController */,
+				046458CE1EDDCF9B00131AA1 /* SettingsViewController */,
+				046458D01EDDCFCE00131AA1 /* FavoriteViewController */,
+				84E7420A1EE26CA70049EC92 /* PostViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84E8D4D51EFDA78500656409 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04382FBB1EE2A1A200DD8A9B /* PictureItem */,
+				84E8D4D61EFDA78C00656409 /* Delegates */,
+				8454ADE91F01761500AC8CED /* ImageManipulations */,
+				84E8D4D71EFDA7BB00656409 /* Service */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		84E8D4D61EFDA78C00656409 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D4E31EFDB0B800656409 /* CollectionViewDelegate */,
+				84E8D4E21EFDAC6B00656409 /* SearchBarDelegate */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		84E8D4D71EFDA7BB00656409 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8472ED9C1F12ED22002EAD7F /* NetworkConstants */,
+				84B0BBDC1EFFF726006DD2E0 /* Router */,
+				840A823E1EFDD12D005977D0 /* DataLoaderFromFlickr */,
+				84AC80E31F010E8900BCB694 /* DataParser */,
+				8454ADEA1F01762D00AC8CED /* ImageLoader */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		84E8D4D81EFDA8E700656409 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D4D91EFDA98500656409 /* Model.xcdatamodeld */,
+				84E8D4DC1EFDAB6D00656409 /* FBDatabaseManager.h */,
+				84E8D4DD1EFDAB6D00656409 /* FBDatabaseManager.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		84E8D4E21EFDAC6B00656409 /* SearchBarDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D4DF1EFDAC6400656409 /* FBSearchBarDelegate.h */,
+				84E8D4E01EFDAC6400656409 /* FBSearchBarDelegate.m */,
+			);
+			name = SearchBarDelegate;
+			sourceTree = "<group>";
+		};
+		84E8D4E31EFDB0B800656409 /* CollectionViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84E8D4E41EFDB0D200656409 /* FBCollectionViewDelegate.h */,
+				84E8D4E51EFDB0D200656409 /* FBCollectionViewDelegate.m */,
+				848E11FD1F16B00F00B3F399 /* FBCustomLayoutDelegate.h */,
+				848E11FA1F16AA0A00B3F399 /* FBCustomCollectionViewLayout.h */,
+				848E11FB1F16AA0A00B3F399 /* FBCustomCollectionViewLayout.m */,
+			);
+			name = CollectionViewDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E75AC21ED9776000E2AD8E /* FlickrBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E75ADA1ED9776000E2AD8E /* Build configuration list for PBXNativeTarget "FlickrBrowser" */;
+			buildPhases = (
+				04E75ABF1ED9776000E2AD8E /* Sources */,
+				04E75AC01ED9776000E2AD8E /* Frameworks */,
+				04E75AC11ED9776000E2AD8E /* Resources */,
+				04E75AE31ED97A5C00E2AD8E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickrBrowser;
+			productName = FlickrBrowser;
+			productReference = 04E75AC31ED9776000E2AD8E /* FlickrBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84B0BBD11EFFF421006DD2E0 /* FlickrBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B0BBDB1EFFF422006DD2E0 /* Build configuration list for PBXNativeTarget "FlickrBrowserTests" */;
+			buildPhases = (
+				84B0BBCE1EFFF421006DD2E0 /* Sources */,
+				84B0BBCF1EFFF421006DD2E0 /* Frameworks */,
+				84B0BBD01EFFF421006DD2E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B0BBD81EFFF422006DD2E0 /* PBXTargetDependency */,
+			);
+			name = FlickrBrowserTests;
+			productName = FlickrBrowserTests;
+			productReference = 84B0BBD21EFFF421006DD2E0 /* FlickrBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E75ABB1ED9776000E2AD8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "iOS-School-1";
+				TargetAttributes = {
+					04E75AC21ED9776000E2AD8E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					84B0BBD11EFFF421006DD2E0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04E75AC21ED9776000E2AD8E;
+					};
+				};
+			};
+			buildConfigurationList = 04E75ABE1ED9776000E2AD8E /* Build configuration list for PBXProject "FlickrBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04E75ABA1ED9776000E2AD8E;
+			productRefGroup = 04E75AC41ED9776000E2AD8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E75AC21ED9776000E2AD8E /* FlickrBrowser */,
+				84B0BBD11EFFF421006DD2E0 /* FlickrBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E75AC11ED9776000E2AD8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472ED931F0FB641002EAD7F /* SanFranciscoDisplay-Medium.otf in Resources */,
+				04E75AD61ED9776000E2AD8E /* LaunchScreen.storyboard in Resources */,
+				8472ED9B1F0FC0FF002EAD7F /* SFUIText-Regular.otf in Resources */,
+				04E75AD31ED9776000E2AD8E /* Assets.xcassets in Resources */,
+				04E75AD11ED9776000E2AD8E /* Main.storyboard in Resources */,
+				8472ED991F0FC0E0002EAD7F /* SFUIText-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B0BBD01EFFF421006DD2E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E75AE31ED97A5C00E2AD8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E75ABF1ED9776000E2AD8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E75AE61ED9810900E2AD8E /* FBFavoriteViewController.m in Sources */,
+				84E742101EE26DB70049EC92 /* FBPictureItem.m in Sources */,
+				840A823D1EFDD126005977D0 /* FBDataLoaderFromFlickr.m in Sources */,
+				04E75ACB1ED9776000E2AD8E /* AppDelegate.m in Sources */,
+				84B0BBDF1EFFF74E006DD2E0 /* FBRouter.m in Sources */,
+				84DEE89D1EDCD58500E2E7FC /* FBSettingsViewController.m in Sources */,
+				8454ADF81F017D1400AC8CED /* FBImageSetter.m in Sources */,
+				84E7420D1EE26D010049EC92 /* FBPostViewController.m in Sources */,
+				848E11FC1F16AA0A00B3F399 /* FBCustomCollectionViewLayout.m in Sources */,
+				845FA4231F02596000CC83DF /* FBImageManager.m in Sources */,
+				84E8D4E11EFDAC6400656409 /* FBSearchBarDelegate.m in Sources */,
+				8454ADF11F01766700AC8CED /* FBImageLoader.m in Sources */,
+				8454ADF41F01771200AC8CED /* FBImageLoadingOperation.m in Sources */,
+				84E8D4DE1EFDAB6D00656409 /* FBDatabaseManager.m in Sources */,
+				8454ADEE1F01765300AC8CED /* FBImageCropper.m in Sources */,
+				84E8D4DB1EFDA98500656409 /* Model.xcdatamodeld in Sources */,
+				84E8D4E61EFDB0D200656409 /* FBCollectionViewDelegate.m in Sources */,
+				04E75AC81ED9776000E2AD8E /* main.m in Sources */,
+				84AC80E61F0111ED00BCB694 /* FBDataParser.m in Sources */,
+				84B0BBE21F0048A6006DD2E0 /* FBNetworkConstants.m in Sources */,
+				8454ADE71F0168A500AC8CED /* FBPictureCell.m in Sources */,
+				04E75ADF1ED977BC00E2AD8E /* FBSearchPanelViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B0BBCE1EFFF421006DD2E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AC80E81F0134FE00BCB694 /* FBDataParserTests.m in Sources */,
+				84B0BBE41F005584006DD2E0 /* FBRouterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84B0BBD81EFFF422006DD2E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E75AC21ED9776000E2AD8E /* FlickrBrowser */;
+			targetProxy = 84B0BBD71EFFF422006DD2E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04E75ACF1ED9776000E2AD8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E75AD01ED9776000E2AD8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04E75AD41ED9776000E2AD8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E75AD51ED9776000E2AD8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04E75AD81ED9776000E2AD8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04E75AD91ED9776000E2AD8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04E75ADB1ED9776000E2AD8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FlickrBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.intern.FlickrBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04E75ADC1ED9776000E2AD8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FlickrBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.intern.FlickrBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84B0BBD91EFFF422006DD2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = FlickrBrowserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SberInternship.FlickrBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickrBrowser.app/FlickrBrowser";
+			};
+			name = Debug;
+		};
+		84B0BBDA1EFFF422006DD2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = FlickrBrowserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SberInternship.FlickrBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickrBrowser.app/FlickrBrowser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E75ABE1ED9776000E2AD8E /* Build configuration list for PBXProject "FlickrBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E75AD81ED9776000E2AD8E /* Debug */,
+				04E75AD91ED9776000E2AD8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E75ADA1ED9776000E2AD8E /* Build configuration list for PBXNativeTarget "FlickrBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E75ADB1ED9776000E2AD8E /* Debug */,
+				04E75ADC1ED9776000E2AD8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B0BBDB1EFFF422006DD2E0 /* Build configuration list for PBXNativeTarget "FlickrBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B0BBD91EFFF422006DD2E0 /* Debug */,
+				84B0BBDA1EFFF422006DD2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84E8D4D91EFDA98500656409 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84E8D4DA1EFDA98500656409 /* Model.xcdatamodel */,
+			);
+			currentVersion = 84E8D4DA1EFDA98500656409 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04E75ABB1ED9776000E2AD8E /* Project object */;
+}

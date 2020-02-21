@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="FBPictureItem" representedClassName="FBPictureItem" syncable="YES">
+        <attribute name="avatarUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numOfFavs" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pictureDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictureId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictureUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="views" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FBPictureItem" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>
